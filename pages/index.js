@@ -6,7 +6,7 @@ export default function Home() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch("/api/data")
+    fetch("http://146.19.213.47:3000/items")
       .then((res) => res.json())
       .then((data) => setData(data))
       .catch((error) => console.error(error));

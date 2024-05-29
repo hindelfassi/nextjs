@@ -1,7 +1,8 @@
 // pages/api/data.js
 import { MongoClient, ObjectId } from "mongodb";
 
-const uri = "mongodb://localhost:27017/"; // Replace with your MongoDB Atlas connection string
+const uri =
+  "mongodb+srv://hindelfassi97:GrsgTrf0pcF4iJxz@test-api.wl3ipsq.mongodb.net/?retryWrites=true&w=majority&appName=test-api"; // Replace with your MongoDB Atlas connection string
 const client = new MongoClient(uri);
 
 export default async function handler(req, res) {
